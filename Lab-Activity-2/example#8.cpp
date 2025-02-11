@@ -23,7 +23,7 @@ int main() {
 
     sum = A[0][0] + A[1][1] + A[2][2] + A[3][3] + A[4][4];
     prod = A[0][4] * A[1][3] * A[2][2] * A[3][1] * A[4][0];
-    cout <<"The sum of the elements in the main diagonal is: " << sum << endl;
-    cout <<"The product of the elements in the secondary diagonal is: " << prod << endl;
+    cout <<"The sum of the elements in the main diagonal are: " << sum << endl;
+    cout <<"The product of the elements in the secondary diagonal are: " << prod << endl;
     system("pause");
 }
