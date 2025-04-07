@@ -10,7 +10,7 @@ int main() {
     cout<<"You entered: "<<x<<endl;
     cout<<endl<<"Enter letter to search: "; cin>>y;
     
-    for(z=0;z<=4;z++)
+    for(z=0;z<5;z++) // Changed the condition to z<5 to correctly iterate through the array
         if (y==x[z])
             cout<<y<<" is located at "<<"array["<<z<<"]"<<endl;
 }
