@@ -17,14 +17,6 @@ public:
         shelfLife = sl;
         pieces = pcs;
     }
-
-    void displayInfo() {
-        cout << "Item ID: " << id << endl;
-        cout << "Item Name: " << name << endl;
-        cout << "Price: $" << price << endl;
-        cout << "Shelf Life: " << shelfLife << " days" << endl;
-        cout << "Pieces: " << pieces << endl;
-    }
 };
 
 int main() {
@@ -50,10 +42,10 @@ int main() {
             cin >> quantity;
 
             if (quantity > prod[i].pieces) {
-                cout << "NO" << endl;
+                cout << "The quantity exceeds stock!" << endl;
             } else {
                 double totalPrice = quantity * prod[i].price;
-                cout << "Total price for " << quantity << " pieces of " << prod[i].name << " is $" << totalPrice << endl;
+                cout << "The total price for " << prod[i].name << ": PHP " << totalPrice << endl;
                 prod[i].pieces -= quantity;
             }
             break;
