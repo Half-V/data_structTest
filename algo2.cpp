@@ -17,14 +17,6 @@ public:
         shelfLife = sl;
         pieces = pcs;
     }
-
-    void displayInfo() {
-        cout << "Item ID: " << id << endl;
-        cout << "Item Name: " << name << endl;
-        cout << "Price: $" << price << endl;
-        cout << "Shelf Life: " << shelfLife << " days" << endl;
-        cout << "Pieces: " << pieces << endl;
-    }
 };
 
 void selectionSort(sariSari arr[], int n) {
